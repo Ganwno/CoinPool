@@ -1,5 +1,8 @@
 import Head from "next/head";
+import Header from "../components/Header/Header";
 import Navigation from "../components/Navigation/Navigation";
+import ProductSection from "../components/Product/ProductSection";
+import Product from "../components/Product/ProductSection";
 
 export default function Home() {
   return (
@@ -11,6 +14,8 @@ export default function Home() {
       </Head>
       <section className="font-Montserrat">
         <Navigation />
+        <Header />
+        <ProductSection />
       </section>
     </div>
   );

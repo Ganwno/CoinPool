@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         Navigation: "#161718",
+        ether: "#8C8C8C",
       },
       fontFamily: {
         Montserrat: "Montserrat",

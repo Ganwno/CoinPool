@@ -17,10 +17,10 @@ export default function Navigation() {
         </div>
         <div className="flex items-center">
           <ul className="flex text-white text-2xl gap-10">
-            <li>Home</li>
-            <li>Product</li>
-            <li>Features</li>
-            <li>Graph</li>
+            <li className="hover:-translate-y-2">Home</li>
+            <li className="hover:-translate-y-2">Product</li>
+            <li className="hover:-translate-y-2">Features</li>
+            <li className="hover:-translate-y-2">Graph</li>
           </ul>
         </div>
         <div>

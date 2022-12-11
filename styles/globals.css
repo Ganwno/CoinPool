@@ -24,3 +24,31 @@ body {
   box-sizing: border-box;
   background-color: #000000;
 }
+.text {
+  background: linear-gradient(
+    91.69deg,
+    #8c8c8c 15.36%,
+    #d2c7c7,
+    #333333 88.62%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.product {
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.2);
+}
