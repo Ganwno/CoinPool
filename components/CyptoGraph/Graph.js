@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CryptoCurrencies from "./CryptoCurrencies";
 
 export default function Graph() {
+  const [list, setList] = useState([]);
   const obj = [
     {
       id: 1,
@@ -44,10 +45,20 @@ export default function Graph() {
       maxSupply: "25254",
     },
   ];
+  const fetchData = async () => {
+    const response = await fetch("https://api.coincap.io/v2/assets");
+    const data = await response.json();
+    const cryptoList = data.data;
+    setList(cryptoList);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
-    <table className=" h-3/4 w-[90%] flex flex-col items-center text-2xl">
+    <div className=" h-3/4 w-[90%] flex flex-col items-center text-2xl">
       <div className="w-full flex justify-center items-center ">
-        <ul className="flex justify-between w-[90%]">
+        <ul className="flex justify-between w-[90%] mb-10">
           <li>#</li>
           <li>Name</li>
           <li>Price</li>
@@ -59,20 +70,22 @@ export default function Graph() {
         </ul>
       </div>
 
-      {obj.map((result) => {
-        return (
-          <CryptoCurrencies
-            key={result.id}
-            id={result.id}
-            name={result.name}
-            price={result.price}
-            changePercent24Hr={result.changePercent24Hr}
-            marketCapUsd={result.marketCapUsd}
-            volumeUsd24Hr={result.volumeUsd24Hr}
-            maxSupply={result.maxSupply}
-          />
-        );
+      {list.map((result, index) => {
+        if (index < 7) {
+          return (
+            <CryptoCurrencies
+              key={result.id}
+              id={index + 1}
+              name={result.name}
+              price={result.priceUsd}
+              changePercent24Hr={result.changePercent24Hr}
+              marketCapUsd={result.marketCapUsd}
+              volumeUsd24Hr={result.volumeUsd24Hr}
+              maxSupply={result.maxSupply}
+            />
+          );
+        }
       })}
-    </table>
+    </div>
   );
 }

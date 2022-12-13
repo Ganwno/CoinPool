@@ -18,13 +18,7 @@ export default function Products() {
           <br /> interference.
         </p>
       </div>
-      <Image
-        src={ether}
-        alt="ether"
-        width={350}
-        height={20}
-        className="h-[550px]"
-      />
+      <Image src={ether} alt="ether" width={350} className="h-[550px]" />
     </div>
   );
 }
