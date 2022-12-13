@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CryptoGraph from "../components/CyptoGraph/CryptoGraph";
 import Header from "../components/Header/Header";
 import Navigation from "../components/Navigation/Navigation";
 import ProductSection from "../components/Product/ProductSection";
@@ -16,6 +17,7 @@ export default function Home() {
         <Navigation />
         <Header />
         <ProductSection />
+        <CryptoGraph />
       </section>
     </div>
   );
