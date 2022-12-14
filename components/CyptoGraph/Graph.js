@@ -8,8 +8,8 @@ export default function Graph() {
       id: 1,
       name: "Bitcoin",
       symbol: "btc",
-      price: "17,785",
-      changePercent24Hr: "0.24",
+      priceUsd: 17785,
+      changePercent24Hr: -0.24,
       marketCapUsd: "3305530",
       volumeUsd24Hr: "625252",
       maxSupply: "25254",
@@ -18,8 +18,8 @@ export default function Graph() {
       id: 2,
       name: "Bitcoin",
       symbol: "btc",
-      price: "17,785",
-      changePercent24Hr: "0.24",
+      priceUsd: 17785,
+      changePercent24Hr: 0.24,
       marketCapUsd: "3305530",
       volumeUsd24Hr: "625252",
       maxSupply: "25254",
@@ -28,8 +28,8 @@ export default function Graph() {
       id: 3,
       name: "Bitcoin",
       symbol: "btc",
-      price: "17,785",
-      changePercent24Hr: "0.24",
+      priceUsd: 17785,
+      changePercent24Hr: 0.24,
       marketCapUsd: "3305530",
       volumeUsd24Hr: "625252",
       maxSupply: "25254",
@@ -38,8 +38,8 @@ export default function Graph() {
       id: 4,
       name: "Bitcoin",
       symbol: "btc",
-      price: "17,785",
-      changePercent24Hr: "0.24",
+      priceUsd: 17785,
+      changePercent24Hr: 0.24,
       marketCapUsd: "3305530",
       volumeUsd24Hr: "625252",
       maxSupply: "25254",
@@ -54,19 +54,20 @@ export default function Graph() {
   useEffect(() => {
     fetchData();
   }, []);
+  console.log(list);
 
   return (
     <div className=" h-3/4 w-[90%] flex flex-col items-center text-2xl">
       <div className="w-full flex justify-center items-center ">
-        <ul className="flex justify-between w-[90%] mb-10">
+        <ul className="flex justify-between w-[90%] mb-10 text-xl text-[#D7D7D7]">
           <li>#</li>
-          <li>Name</li>
-          <li>Price</li>
-          <li>24%</li>
-          <li>MarketCap</li>
-          <li>Volume(24h)</li>
-          <li>MaxSupply</li>
-          <li>Last 7 Days</li>
+          <li className="w-16">Name</li>
+          <li className="w-16">Price</li>
+          <li className="w-16">24%</li>
+          <li className="w-28">MarketCap</li>
+          <li className="w-32">Volume(24h)</li>
+          <li className="w-28">MaxSupply</li>
+          <li className="w-28">Last 7 Days</li>
         </ul>
       </div>
 
@@ -76,6 +77,7 @@ export default function Graph() {
             <CryptoCurrencies
               key={result.id}
               id={index + 1}
+              symbol={result.symbol}
               name={result.name}
               price={result.priceUsd}
               changePercent24Hr={result.changePercent24Hr}
