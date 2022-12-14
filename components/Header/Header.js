@@ -5,7 +5,7 @@ import header from "../../public/header.png";
 
 export default function Header() {
   return (
-    <header className="text-white flex flex-col items-center gap-20 h-[85rem] ">
+    <header className="text-white flex flex-col items-center gap-20 h-[85rem] overflow-hidden ">
       <div className="flex items-center justify-center mt-10 ">
         <Image src={owl} alt="brand logo" />
         <h1 className=" text-4xl font-semibold">COINPOOL</h1>
@@ -16,7 +16,7 @@ export default function Header() {
           <br /> of the future with
           <br /> <span className="text"> Cryptocurrency.</span>
         </h1>
-        <Image src={header} alt="ethereum" width={1300} height={500} />
+        <Image src={header} alt="ethereum" width={1500} height={500} />
       </div>
     </header>
   );
