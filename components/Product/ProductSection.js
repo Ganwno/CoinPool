@@ -6,7 +6,7 @@ import Bitcoin from "./Bitcoin";
 
 export default function ProductSection() {
   return (
-    <section className="min-h-screen  flex flex-col justify-around items-center  gap-60 py-40">
+    <section className="min-h-screen  flex flex-col justify-around items-center  gap-96 py-40">
       {/* <Image src={nextIcon} alt="next icon" className=" rotate-180" /> */}
       <Ethereum />
       <Bitcoin />
