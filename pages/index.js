@@ -1,5 +1,6 @@
 import Head from "next/head";
 import CryptoGraph from "../components/CyptoGraph/CryptoGraph";
+import Features from "../components/Features/Features";
 import Header from "../components/Header/Header";
 import Navigation from "../components/Navigation/Navigation";
 import ProductSection from "../components/Product/ProductSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <section className="font-Montserrat">
         <Navigation />
         <Header />
+        <Features />
         <ProductSection />
         <CryptoGraph />
       </section>
