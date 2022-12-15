@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Ethereum from "./Ethereum";
-import nextIcon from "../../public/nextProduct.svg";
+import nextIcon from "../../public/nextproduct.svg";
 import Bitcoin from "./Bitcoin";
 
 export default function ProductSection() {

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import owl from "../../public/owl.svg";
 import header from "../../public/header.png";
+import { motion } from "framer-motion";
 
 export default function Header() {
   return (

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import CryptoGraph from "../components/CyptoGraph/CryptoGraph";
 import FeaturesSection from "../components/Features/FeaturesSection";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import Navigation from "../components/Navigation/Navigation";
 import ProductSection from "../components/Product/ProductSection";
@@ -20,6 +21,7 @@ export default function Home() {
         <FeaturesSection />
         <ProductSection />
         <CryptoGraph />
+        <Footer />
       </section>
     </div>
   );

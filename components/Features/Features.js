@@ -6,7 +6,7 @@ export default function Features({ title, paragraph }) {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ delay: 0.5, duration: 0.7 }}
+      transition={{ delay: 0.2, duration: 1 }}
       className="flex flex-col gap-8"
     >
       <h1 className="text-9xl font-semibold">{title}</h1>

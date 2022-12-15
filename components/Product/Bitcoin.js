@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import BitcoinImg from "../../public/bitcoin.png";
+import { motion } from "framer-motion";
 
 export default function Bitcoin() {
   return (

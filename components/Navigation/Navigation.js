@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import owl from "../../public/owl.svg";
 import heart from "../../public/heart.svg";
+import { motion } from "framer-motion";
 
 export default function Navigation() {
   return (
@@ -17,10 +18,10 @@ export default function Navigation() {
         </div>
         <div className="flex items-center">
           <ul className="flex text-white text-2xl gap-10">
-            <li className="hover:-translate-y-2">Home</li>
-            <li className="hover:-translate-y-2">Product</li>
-            <li className="hover:-translate-y-2">Features</li>
-            <li className="hover:-translate-y-2">Graph</li>
+            <motion.li whileHover={{ translateY: -4 }}>Home</motion.li>
+            <motion.li whileHover={{ translateY: -4 }}>Product</motion.li>
+            <motion.li whileHover={{ translateY: -4 }}>Features</motion.li>
+            <motion.li whileHover={{ translateY: -4 }}>Graph</motion.li>
           </ul>
         </div>
         <div>

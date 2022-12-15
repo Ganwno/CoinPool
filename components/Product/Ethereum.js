@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import ether from "../../public/ether.png";
+import { motion } from "framer-motion";
 
 export default function Ethereum() {
   return (
