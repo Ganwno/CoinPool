@@ -1,13 +1,10 @@
-import Image from "next/image";
-import React from "react";
-import BitcoinImg from "../../public/bitcoin.png";
-import { motion } from "framer-motion";
+import Spline from "@splinetool/react-spline";
 
 export default function Bitcoin() {
   return (
-    <div className="bg-black w-[80%] border-[0.5px] text-white h-[63rem] flex items-center justify-center gap-40 product">
-      <div className="">
-        <h1 className="text-8xl font-semibold mb-16 border-b-4 w-64 text-orange-500">
+    <div className="bg-black w-[80%] border-[0.5px] text-white h-[63rem] flex items-center justify-between gap-40 product">
+      <div className="ml-16">
+        <h1 className="text-8xl font-semibold mb-16 border-b-4 w-64 text-yellow-300">
           Bitcoin
         </h1>
         <p className="text-4xl">
@@ -19,7 +16,9 @@ export default function Bitcoin() {
           <br /> Transactions with bitcoin
         </p>
       </div>
-      <Image src={BitcoinImg} alt="Bitcoin" width={450} className="h-[450px]" />
+      <div className="h-[62rem] w-[50rem] ">
+        <Spline scene="https://prod.spline.design/d3mi0pKlmbMlJtuc/scene.splinecode" />
+      </div>
     </div>
   );
 }
