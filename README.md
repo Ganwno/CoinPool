@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://coin-pool.vercel.app/" target="_blank">
-  <img alt="Logo" src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/coin-pool.jpg" width="100" />
+  <img alt="Logo" src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/ether.png" width="100" />
   </a>
 </div>
 <h1 align="center">
