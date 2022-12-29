@@ -1,4 +1,19 @@
-[https://coin-pool.vercel.app/]
+<div align="center">
+<a href="https://coin-pool.vercel.app/" target="_blank">
+  <img alt="Logo" src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/coin-pool.jpg" width="100" />
+  </a>
+</div>
+<h1 align="center">
+  coin-pool.vercel.app - CoinPool
+</h1>
+<p align="center">
+  The next generation crypto site <a href="https://coin-pool.vercel.app/" target="_blank">coin-pool.vercel.app</a> built with <a href="https://nextjs.org/" target="_blank">Next-js</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>
+</p>
+<p align="center">
+  <a href="https://coin-pool.vercel.app/" target="_blank">
+    <img src="https://raw.githubusercontent.com/eyuel23/Portfolio-v1/main/public/coinpool.jpg" alt="vercel status"  width="400"/>
+  </a>
+</p>
 
 ## Getting Started
 
