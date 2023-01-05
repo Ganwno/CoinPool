@@ -48,10 +48,16 @@ export default function CryptoCurrencies({
             : "▲ " + changePercent24HrFinal}
           %
         </li>
-        <li className=" w-32 overflow-hidden">${marketCapUsdFinal}</li>
-        <li className=" w-32 overflow-hidden">${volumeUsd24HrFinal}</li>
-        <li className=" w-32 overflow-hidden">{maxSupplyFinal}</li>
-        <li className="flex items-center justify-center gap-5">
+        <li className=" w-32 overflow-hidden hidden sm:block">
+          ${marketCapUsdFinal}
+        </li>
+        <li className=" w-32 overflow-hidden hidden sm:block">
+          ${volumeUsd24HrFinal}
+        </li>
+        <li className=" w-32 overflow-hidden hidden sm:block">
+          {maxSupplyFinal}
+        </li>
+        <li className=" items-center justify-center gap-5 hidden sm:flex">
           <Image src={graph} alt="graph" width={100} />
           <Image src={heart} alt="heart logo" width={20} height={20} />
         </li>

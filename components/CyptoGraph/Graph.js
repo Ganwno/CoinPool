@@ -64,10 +64,10 @@ export default function Graph() {
           <li className="w-16">Name</li>
           <li className="w-16">Price</li>
           <li className="w-16">24%</li>
-          <li className="w-28">MarketCap</li>
-          <li className="w-32">Volume(24h)</li>
-          <li className="w-28">MaxSupply</li>
-          <li className="w-28">Last 7 Days</li>
+          <li className="w-28 hidden sm:block">MarketCap</li>
+          <li className="w-32 hidden sm:block">Volume(24h)</li>
+          <li className="w-28 hidden sm:block">MaxSupply</li>
+          <li className="w-28 hidden sm:block">Last 7 Days</li>
         </ul>
       </div>
 

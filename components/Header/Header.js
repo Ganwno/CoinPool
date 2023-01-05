@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <header className="text-white flex flex-col items-center gap-20 h-[85rem] overflow-hidden ">
+    <header className="text-white min-h-screen flex flex-col items-center gap-20 h-[85rem] overflow-hidden ">
       <div className="flex items-center justify-center mt-10 ">
         <Image src={owl} alt="brand logo" />
         <h1 className=" text-4xl font-semibold">COINPOOL</h1>

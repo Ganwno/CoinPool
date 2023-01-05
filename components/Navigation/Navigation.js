@@ -17,7 +17,7 @@ export default function Navigation() {
           <Image src={heart} alt="heart logo" />
         </div>
         <div className="flex items-center">
-          <ul className="flex text-white text-2xl gap-10">
+          <ul className="hidden text-white text-2xl gap-10 sm:block">
             <motion.li whileHover={{ translateY: -4 }}>Home</motion.li>
             <motion.li whileHover={{ translateY: -4 }}>Product</motion.li>
             <motion.li whileHover={{ translateY: -4 }}>Features</motion.li>
