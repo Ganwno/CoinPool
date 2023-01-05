@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <div className="bg-Navigation w-[90%] min-h-[8%] rounded-xl fixed bottom-5 right-[5%] flex items-center px-10">
       <nav className="flex justify-between items-center w-full">
-        <div className="flex items-center">
+        <div className="hidden items-center sm:flex">
           <Image
             src={owl}
             alt="brand logo"
@@ -17,7 +17,7 @@ export default function Navigation() {
           <Image src={heart} alt="heart logo" />
         </div>
         <div className="flex items-center">
-          <ul className="hidden text-white text-2xl gap-10 sm:block">
+          <ul className="flex text-white text-2xl gap-10 ">
             <motion.li whileHover={{ translateY: -4 }}>Home</motion.li>
             <motion.li whileHover={{ translateY: -4 }}>Product</motion.li>
             <motion.li whileHover={{ translateY: -4 }}>Features</motion.li>

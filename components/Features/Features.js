@@ -7,10 +7,10 @@ export default function Features({ title, paragraph }) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.2, duration: 1 }}
-      className="flex flex-col gap-8"
+      className="flex flex-col sm:gap-8 gap-5"
     >
-      <h1 className="text-9xl font-semibold">{title}</h1>
-      <p className="text-3xl">
+      <h1 className="sm:text-9xl text-7xl font-semibold">{title}</h1>
+      <p className="sm:text-3xl text-2xl">
         Purchase a coin for your future
         <br /> and own assets that will provide
         <br />
